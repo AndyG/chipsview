@@ -34,7 +34,7 @@ public class ImageUtil {
         // Create an image controller builder.
         PipelineDraweeControllerBuilder builder = Fresco.newDraweeControllerBuilder();
 
-        // Provide some standard config.
+        // Provide some s5andard config.
         builder = builder.setOldController(draweeView.getController()).setUri(uri).setAutoPlayAnimations(true);
 
         // Get image request.
@@ -57,7 +57,7 @@ public class ImageUtil {
         boolean smallImage = !url.contains("gif") && width <= SMALL_IMAGE_MAX_SIZE && height <= SMALL_IMAGE_MAX_SIZE;
 
         // Use a smaller cache for everything else.
-        request = request.setImageType(smallImage ? ImageRequest.ImageType.SMALL : ImageRequest.ImageType.DEFAULT);
+        request = request.setCacheChoice(smallImage ? ImageRequest.CacheChoice.SMALL : ImageRequest.CacheChoice.DEFAULT);
 
         if (width > 0 && height > 0) {
 

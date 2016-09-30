@@ -46,11 +46,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
 
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
 
     // Library for network image loading.
-    compile 'com.facebook.fresco:fresco:0.11.0'
-    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.11.0'
+    compile 'com.facebook.fresco:fresco:0.14.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.14.0'
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
