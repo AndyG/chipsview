@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/angarron/chipsview'
     gitUrl = 'https://github.com/angarron/chipsview.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.1.1'
 
     developerId = 'angarron'
     developerName = 'Anderson Garron'
@@ -26,7 +26,7 @@ ext {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         minSdkVersion 16
